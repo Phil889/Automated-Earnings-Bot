@@ -23,7 +23,15 @@ automated_earnings_bot/
 ├── order_builder.py        # Constructs brokerage-specific order definitions
 ├── portfolio_tracker.py    # Manages portfolio state and trade history
 ├── scheduler.py            # Main entry point, schedules and runs jobs
-└── portfolio_data.json     # State persistence file
+├── portfolio_data.json     # State persistence file
+└── docs/                   # Documentation for libraries and APIs
+    ├── README.md           # Documentation overview
+    ├── alpaca_api_docs.md  # Alpaca API documentation
+    ├── polygon_api_docs.md # Polygon.io API documentation
+    ├── apscheduler_docs.md # APScheduler documentation
+    ├── pandas_docs.md      # pandas documentation
+    ├── numpy_docs.md       # NumPy documentation
+    └── scipy_docs.md       # SciPy documentation
 ```
 
 ## Requirements
@@ -75,6 +83,20 @@ Filtering criteria:
 - Volume threshold: Minimum average daily volume
 - IV/RV ratio threshold: Implied volatility relative to realized volatility
 - Term structure slope threshold: Slope of the IV term structure
+
+## Documentation
+
+The `docs/` directory contains comprehensive documentation for all the key libraries and APIs used in this project. This documentation has been gathered to provide up-to-date reference material for implementing the core functionality of the bot. It includes code snippets and examples that can be directly used or adapted for the project.
+
+The documentation covers:
+- Alpaca Trading API for brokerage functions
+- Polygon.io API for market data
+- APScheduler for task scheduling
+- pandas for data manipulation and time series analysis
+- NumPy for numerical operations
+- SciPy for interpolation (particularly for IV term structure)
+
+Refer to the [docs/README.md](docs/README.md) file for more information.
 
 ## Development Status
 
